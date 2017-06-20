@@ -27,5 +27,13 @@
         }
     }
 
-    w.imgToBase64 = imgToBase64;
+    if (typeof exports == "object") {
+		module.exports = imgToBase64;
+	} else if (typeof define == "function" && define.amd) {
+		define([], function () {
+			return imgToBase64;
+		})
+	} else {
+		w.imgToBase64 = imgToBase64;
+	}
 })(window);
