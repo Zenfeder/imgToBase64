@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>imgToBase64 测试</title>
+</head>
+<body>
+	
+	<script type="text/javascript" src="imgTobase64.js"></script>
+	<script type="text/javascript">
+		imgToBase64('http://192.168.210.74:3003/img/avator.png', function(base64) {
+			var $img = document.createElement('img');
+			$img.src = base64;
+			document.body.appendChild($img);
+		});
+	</script>
+</body>
+</html>
