@@ -1,0 +1,19 @@
+{
+  "name": "img-to-base64",
+  "version": "1.0.0",
+  "description": "",
+  "main": "imgTobase64.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zenfeder/imgToBase64.git"
+  },
+  "author": "Zenfeder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zenfeder/imgToBase64/issues"
+  },
+  "homepage": "https://github.com/Zenfeder/imgToBase64#readme"
+}

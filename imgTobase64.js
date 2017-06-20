@@ -1,7 +1,7 @@
 (function(w){
-	function imgToBase64(imgUrl, cb) {
+	function imgToBase64(options, cb) {
         var buffer_img = document.createElement('img');
-        buffer_img.src = imgUrl;
+        buffer_img.src = options.url;
         buffer_img.crossOrigin = 'Anonymous';
         document.body.appendChild(buffer_img);
 
@@ -20,10 +20,10 @@
 
             cb(imgDataUrl);
         }
-        buffer_img.src = imgUrl;
+        buffer_img.src = options.url;
         if ( buffer_img.complete || buffer_img.complete === undefined ) {
             buffer_img.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
-            buffer_img.src = imgUrl;
+            buffer_img.src = options.url;
         }
     }
 
