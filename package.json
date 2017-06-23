@@ -2,6 +2,12 @@
   "name": "img-to-base64",
   "version": "1.0.1",
   "description": "",
+  "keywords": [
+    "img",
+    "canvas",
+    "base64",
+    "encode"
+  ],
   "main": "imgTobase64.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
